@@ -1,0 +1,88 @@
+<!-- Code is written for width of 1200px -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- HEADER START -->
+        <header class="header">
+            <h1>DojoWeather</h1>
+            <div class="locationinfo">
+                <h2 onclick="load()">Burbank</h2>
+                <h2 onclick="load()">Chicago</h2>
+                <h2 onclick="load()">Dallas</h2>
+            </div>
+        </header>
+        <!-- HEADER END -->
+        <div class="main-content">
+            <!-- START OF TOP BAR -->
+            <div class="top-bar">
+                <h1>San Jose</h1>
+                <div class="temp-top-bar">
+                    <p>show temperature in</p>
+                    <select name="scale" id="tempselect">
+                        <option value="celcius">°C</option>
+                        <option value="fahrenheit">°F</option>
+                    </select>
+                </div>
+            </div>
+            <!-- END OF TOP BAR -->
+            <!-- START OF WEATHER CARDS -->
+            <div class="weather">
+                <div class="weathercard">
+                    <h2>Today</h2>
+                    <img src="assets\some_rain.png" alt="rainy">
+                    <p>some rain</p>
+                    <div class="temps">
+                        <h3 class="high">23.9°</h3>
+                        <h3 class="low">18.3°</h3>
+                    </div>
+                </div>
+                <div class="weathercard">
+                    <h2>Today</h2>
+                    <img src="assets\some_sun.png" alt="sunny">
+                    <p>some sun</p>
+                    <div class="temps">
+                        <h3 class="high">26.7°</h3>
+                        <h3 class="low">18.9°</h3>
+                    </div>
+                </div>
+                <div class="weathercard">
+                    <h2>Today</h2>
+                    <img src="assets\some_clouds.png" alt="cloudy">
+                    <p>some clouds</p>
+                    <div class="temps">
+                        <h3 class="high">20.6°</h3>
+                        <h3 class="low">16.1°</h3>
+                    </div>
+                </div>
+                <div class="weathercard">
+                    <h2>Today</h2>
+                    <img src="assets\some_sun.png" alt="sunny">
+                    <p>some sun</p>
+                    <div class="temps">
+                        <h3 class="high">25.6°</h3>
+                        <h3 class="low">21.1°</h3>
+                    </div>
+                </div>
+            </div>
+            <!-- END OF WEATHER CARDS -->
+            <div class="cookie-box">
+                <img src="assets\cookie.png" alt="cookie monster was here">
+                <div class="cookie-excuse">
+                    <h3>Stop! Cookie time</h3>
+                    <p>We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features and to analyse our traffic. <a href="">Read more...</a></p>
+                </div>
+                <button onclick="document.querySelector('.cookie-box').remove()">I Accept</button>
+            </div>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
